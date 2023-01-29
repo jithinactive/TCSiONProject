@@ -19,7 +19,7 @@ public class S4TestLogin extends TestBase{
 		objlogin.setAdminLoginBtn();
 		objlogin.setSwitchTab();
 	}
-	@Test(priority=1, enabled=false)
+	@Test(priority=1, enabled=true)
 	public void invalidLoginTC001() throws IOException, InterruptedException {
 		
 	    objlogin = new S4LoginPage(driver);
@@ -33,7 +33,7 @@ public class S4TestLogin extends TestBase{
 	    String ActualTittle = driver.getTitle();
 	    System.out.println(ActualTittle);
 	}
-	@Test(priority=2,enabled=false)
+	@Test(priority=2,enabled=true)
 	public void invalidLoginTC002() throws IOException, InterruptedException {
 		 //Create Login Page object
 	    objlogin = new S4LoginPage(driver);
@@ -48,7 +48,7 @@ public class S4TestLogin extends TestBase{
 	    String ActualTittle = driver.getTitle();
 	    System.out.println(ActualTittle);
 	}
-	@Test(priority=3,enabled=false)
+	@Test(priority=3,enabled=true)
 	public void invalidLoginTC003() throws IOException, InterruptedException {
 		 //Create Login Page object
 	    objlogin = new S4LoginPage(driver);
