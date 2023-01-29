@@ -24,7 +24,7 @@ public class LoginTest extends TestBase{
 	  
 	}
 	
-	@Test(priority=1, enabled=false)
+	@Test(priority=1, enabled=true)
 	public void invalidLoginTC001() throws IOException, InterruptedException {
 		//Create Login Page object
 	    objLogin = new LoginPage(driver);
@@ -41,7 +41,7 @@ public class LoginTest extends TestBase{
 	    */
 	}
 	
-	@Test(priority=2, enabled=false)
+	@Test(priority=2, enabled=true)
 	public void invalidLoginTC002() throws IOException, InterruptedException {
 		objLogin = new LoginPage(driver);
 		driver.navigate().refresh();
@@ -56,7 +56,7 @@ public class LoginTest extends TestBase{
 	
 	}
 	
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void invalidLoginTC003() throws IOException, InterruptedException {
 		objLogin = new LoginPage(driver);
 		driver.navigate().refresh();
